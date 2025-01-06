@@ -1,0 +1,7 @@
+html snippets
+bracket pair color dlw
+eslint
+prettier
+js snippets
+css intellisense
+path intellisense
