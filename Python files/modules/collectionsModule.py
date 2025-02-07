@@ -58,6 +58,29 @@ A dictionary that maintains the order in which keys are inserted.
 d = OrderedDict([('a', 1), ('b', 2)])
 d['c'] = 3
 print(d)  # Output: OrderedDict([('a', 1), ('b', 2), ('c', 3)])
+
+usage for LRU Cache
+class LRUCache:
+    def __init__(self, capacity: int):
+        self.cache=OrderedDict()
+        self.capacity=capacity
+        self.ln=0
+    def get(self, key: int) -> int:
+        if key in self.cache:
+            self.cache.move_to_end(key) #can have last = False to denote first
+            return self.cache[key]
+        return -1
+    def put(self, key: int, value: int) -> None:
+        if(key in self.cache):
+            self.cache[key]=value
+        elif(self.ln==self.capacity):
+            self.cache.popitem(last=False) #can have last = False to denote first
+            self.cache[key]=value
+        else:
+            self.cache[key]=value
+            self.ln+=1
+        self.cache.move_to_end(key)
+
 '''
 
 from collections import UserDict,UserList,UserString
