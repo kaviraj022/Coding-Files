@@ -4,6 +4,12 @@ from itertools import combinations, permutations
     itertools.combinations(iterable, r) - r value is compulsory
 '''
 
+from itertools import accumulate
+
+'''nums = [1, 2, -3, 4, -2]
+result = list(accumulate(nums))
+print(result)  # [1, 3, 0, 4, 2]'''
+
 from itertools import groupby
 '''
 groups consecutive elements of an iterable based on a specified key function.

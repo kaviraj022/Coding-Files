@@ -5,19 +5,19 @@
 2. Graph Operations and Complexities:
     | **Operation**                | **Adjacency List Complexity** | **Adjacency Matrix Complexity** |
     |------------------------------|-------------------------------|---------------------------------|
-    | **Graph Construction**       | O(V + E)                     | O(V²)                           |
-    | **Add Edge (u, v)**          | O(1)                         | O(1)                            |
-    | **Remove Edge (u, v)**       | O(E)                         | O(1)                            |
-    | **Check Edge (u, v)**        | O(E)                         | O(1)                            |
-    | **DFS / BFS Traversal**      | O(V + E)                     | O(V²)                           |
-    | **Dijkstra's Algorithm**     | O((V + E) log V)             | O(V²)                           |
-    | **Bellman-Ford Algorithm**   | O(VE)                        | O(V³)                           |
-    | **Floyd-Warshall Algorithm** | O(V³)                        | O(V³)                           |
-    | **Topological Sort**         | O(V + E)                     | Not Applicable                  |
-    | **Find Connected Components**| O(V + E)                     | O(V²)                           |
-    | **Minimum Spanning Tree      | O((V + E) log V)             | O(V²)                           |
+    | **Graph Construction**       | O(V + E)                      | O(V²)                           |
+    | **Add Edge (u, v)**          | O(1)                          | O(1)                            |
+    | **Remove Edge (u, v)**       | O(E)                          | O(1)                            |
+    | **Check Edge (u, v)**        | O(E)                          | O(1)                            |
+    | **DFS / BFS Traversal**      | O(V + E)                      | O(V²)                           |
+    | **Dijkstra's Algorithm**     | O((V + E) log V)              | O(V²)                           |
+    | **Bellman-Ford Algorithm**   | O(VE)                         | O(V³)                           |
+    | **Floyd-Warshall Algorithm** | O(V³)                         | O(V³)                           |
+    | **Topological Sort**         | O(V + E)                      | Not Applicable                  |
+    | **Find Connected Components**| O(V + E)                      | O(V²)                           |
+    | **Minimum Spanning Tree      | O((V + E) log V)              | O(V²)                           |
                     (Prim's)**    
-    | **Minimum Spanning Tree      | O(E log E)                   | O(E log E)                      |
+    | **Minimum Spanning Tree      | O(E log E)                    | O(E log E)                      |
                     (Kruskal's)**
 
 3. Key Takeaways:
